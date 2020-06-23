@@ -1,0 +1,106 @@
+
+//Chapter#21-25
+//Task#01
+/*var first = prompt("Enter your first name:")
+var last = prompt("Enter your last name:")
+var fullname = first + " " + last
+alert("Welcome " + fullname)
+
+//Task#02
+var fav = prompt("Enter your fav phone model")
+var length = fav.length
+document.write("My favorite phone is: " + fav + "<br> Length of string: " + length) 
+
+//Task#03
+var string = "Pakistani";
+var index = string.indexOf("n");
+document.write("String: " + string +"<br> Index of 'n': "+ index )
+
+//Task#04
+var string = "Hello World";
+var index = string.lastIndexOf("l");
+document.write("String: " + string +"<br> Last index of 'l': "+ index )
+
+//Task#05
+var string = "Pakistani";
+var char = string.charAt(3);
+document.write("String: " + string +"<br> Character at index 3: "+ char )
+
+//Task#06
+var string = "Pakistani";
+var char = string.indexOf("i");
+var char1 = string.slice(char,4)
+document.write("String: " + string +"<br> Character at index 3: "+ char1 )
+
+//Task#07
+var city = "Hyderabad"
+var city1 = city.replace("Hyder","Islam")
+document.write("City: " + city + "<br> After Replacement: " + city1)
+
+//Task#08
+var message = "Ali and Sami are best friends. They play cricket and football together.";
+var index = message.indexOf('and');
+var index1 = message.lastIndexOf('and');
+var firsttext = message.slice(0,index)
+var replacingtext = "&";
+var secondtext = message.slice(index+3,index1)
+var thirdtext = message.slice(index1+3)
+document.write("Message: "+ message + "<br> After Replacement: " + firsttext+ replacingtext +secondtext+replacingtext+ thirdtext)
+
+//Task#09
+var string = "472"
+var type = typeof(string)
+var num = Number(string)
+var typeno = typeof(num)
+document.write("Value: " + string + " <br> Type: " + type + " <br> Value: " + num + " <br> Type: " + typeno )
+
+//Task#10
+var input = "peanuts"
+document.write("User input: " + input + "<br> Upper case: " + input.toUpperCase())
+
+
+
+
+
+
+
+
+
+
+
+
+
+//Chapter#26-30
+//Task#1
+var number = +prompt("Enter any positive number")
+var round = Math.round(number)
+var floor = Math.floor(number)
+var ceil = Math.ceil(number)
+document.write("<b> Number: " + number + "<br> <b> Round off value: " + round + "<br> <b> Floor value " + floor + "<br> <b> Ceil value: " + ceil)
+
+//Task#2
+var number = +prompt("Enter negative floating point number")
+var round = Math.round(number)
+var floor = Math.floor(number)
+var ceil = Math.ceil(number)
+document.write("<b> Number: " + number + "<br> <b> Round off value: " + round + "<br> <b> Floor value " + floor + "<br> <b> Ceil value: " + ceil)
+
+//Task#3
+var number = +prompt("Enter number")
+var absolute = Math.abs(number)
+document.write("The absolute value of " + number + " is " + absolute)
+
+//Task#4
+var dice = Math.random()*6
+var floor = Math.ceil(dice)
+document.write("Random dice value: " + floor )
+
+//Task#5
+var toss = Math.random()*3
+var floor = Math.floor(toss)
+if (floor ===  2){
+    document.write(floor + " <br> Random coin value: Heads" )
+}
+if (floor===1){
+    document.write(floor + "<br>Random coin value: Tails" )
+}
